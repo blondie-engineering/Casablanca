@@ -78,7 +78,8 @@ export const ButtonsContainer = styled.div`
 `;
 
 export const AnimatedText = styled.div`
-  width: 300px;
+  width: 400px;
+  padding-right: 10px;
   display: inline-block;
   opacity: 0.9;
   animation: ${fadeIn} 2s linear;
@@ -92,8 +93,8 @@ export const SubMenuContext = styled.div`
 
 export const Image = styled.img`
   border-radius: 20%;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   src: ${props => props.src};
   opacity: 0.8;
   animation: ${fadeIn} 2s linear;
@@ -111,8 +112,12 @@ export const Item = styled.div`
   &:hover {
     color: black;
     cursor: pointer;
-    font-size: 64px;
+    font-size: 52px;
     transition: font-size 0.5s ease-in-out;
   }
+`;
+
+export const GoldSpan = styled.span`
+  color: #F3E0BE;
 `;
 

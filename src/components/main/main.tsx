@@ -12,7 +12,8 @@ import {
     Separator,
     SideMenu,
     SubMenuContext,
-    SubLogo
+    SubLogo,
+    GoldSpan
 } from './style'
 import { RotatingImage, Icons } from "../../utils/style";
 import Sculpt from '../../media/sculpt.png'
@@ -45,18 +46,18 @@ export class Main extends React.Component {
         },
         {
             hoveredOption: HoveredOption.Mission,
-            title: 'Me',
-            subtitle: 'What is the core?',
+            title: 'About Me',
+            subtitle: 'Who am I?',
         },
         {
             hoveredOption: HoveredOption.Tech,
             title: 'Tech',
-            subtitle: 'I use Angular/React for Frontend. ',
+            subtitle: 'What do I use? What do I want to learn?',
         },
         {
             hoveredOption: HoveredOption.Careers,
-            title: 'Careers',
-            subtitle: 'Flash boys seekout',
+            title: 'Career/Edu',
+            subtitle: 'My career and education story',
         },
         {
             hoveredOption: HoveredOption.HQ,
@@ -65,8 +66,8 @@ export class Main extends React.Component {
         },
         {
             hoveredOption: HoveredOption.About,
-            title: 'About',
-            subtitle: 'About us',
+            title: 'Contact',
+            subtitle: 'Ways to contact me',
         },
     ]
 
@@ -91,7 +92,7 @@ export class Main extends React.Component {
                 return (
                     <>
                         <AnimatedText>
-                            Master's Thesis project.
+                            Welcome to my place.
                         </AnimatedText>
                         <Image src={Sculpt} />
                     </>
@@ -100,7 +101,13 @@ export class Main extends React.Component {
                 return (
                     <>
                         <AnimatedText>
-                            Get shit done and get the paper.
+                            Hi. My name is Paul/Pablo/Paweł. I was born in 1995, and I have been doing Software Engineering
+                            for 6 years now. I love tech, fútbol, guitar, books and non-ordinary adventures.
+                            I am a graduate of Warsaw University of Technology at
+                            the Faculty of Electronics and Information Technology(Robotics, Bachelor of Engineering). Currently pursuing my Master's Degree
+                            in the field of Computer Science, at the same faculty. I received Dean's Scholarship for both my undergraduate / graduate studies for
+                            remarkable grades. I did some Maths/Physics before studies, and I was a Laurate of Maths/Physics contests organized by Polish Board of Science.
+
                         </AnimatedText>
                         <Image src={Smoke} />
                     </>
@@ -109,7 +116,13 @@ export class Main extends React.Component {
                 return (
                     <>
                         <AnimatedText>
-                            React, Hooks, Styled Comps, GraphQL, Node, Java, Scala, AWS, Docker, Rel and Non-Rel DBs. That's the guns.
+                            I try to be as versatile Software Engineer as possible (although with special flavour for
+                            Frontend & Cloud). For Frontend I use <GoldSpan>React/Angular, Typescript. </GoldSpan> For Backend I am using <GoldSpan>Node,
+                            and JVM stuff when in mood (Java, Scala).</GoldSpan> My cloud choice is <GoldSpan>AWS</GoldSpan>, although I am going to learn
+                            some of the GCP. I did some <GoldSpan>Machine Learning and AI (using Python/Tensorflow, Matlab lol). </GoldSpan>
+                            I did use some <GoldSpan>Postgres, SQL and also No_sql solutions (DynamoDB). </GoldSpan>
+                            For DevOps I am using <GoldSpan>Docker and Terraform. </GoldSpan>
+                            Although raised on <GoldSpan>OOP</GoldSpan>, I intend to be using <GoldSpan>FP</GoldSpan> where applicable.
                         </AnimatedText>
                         <Image src={Tech} />
                     </>
@@ -118,7 +131,22 @@ export class Main extends React.Component {
                 return (
                     <>
                         <AnimatedText>
-                            Always a lookout for flash/witty people.
+                            <ul>
+                                <li>iQor - 2017.07 - 2017.09 - Software Engineer Intern (Python/AWS)</li>
+                                <li>Cloudity - 2018.06 - 2019.07 - Software Engineer (Salesforce)</li>
+                                <li>InFront - 2019.07 - currently - Software Engineer (Node/React/AWS)</li>
+                                <li>PwC - 2019.10 - currently - Frontend Engineer (Angular/RX)</li>
+                                <li><GoldSpan>CAE - C1/C2 - Cambridge Certificate in Advanced English</GoldSpan></li>
+                                <li><GoldSpan>Goethe - B1 - Goethe Zertifikat Deutsch</GoldSpan></li>
+                                <li><GoldSpan>AWS Certified Developer</GoldSpan></li>
+                                <li><GoldSpan>Salesforce Platform Developer 1</GoldSpan></li>
+                                <li><GoldSpan>Functional Programming Specialization in Scala - École Polytechnique Fédérale de Lausanne</GoldSpan></li>
+                                <li><GoldSpan>Machine Learning specialization - Stanford University</GoldSpan></li>
+                                <li><GoldSpan>2x times Golden Award Codility / 1x time Silver Award Codility</GoldSpan></li>
+                                <li><GoldSpan>Rector's Scholarship for Academic Achievements</GoldSpan></li>
+                                <li>Warsaw University of Technology - Masters - Computer Science (in progress)</li>
+                                <li>Warsaw University of Technology - Bachelor of Engineering (5.0) - Robotics</li>
+                            </ul>
                         </AnimatedText>
                         <Image src={Career} />
                     </>
@@ -127,7 +155,8 @@ export class Main extends React.Component {
                 return (
                     <>
                         <AnimatedText>
-                            Brand new HQ at Warsaw Targówek.
+                            I am based in Warsaw, Targówek. I want to work in Berlin, London, Zurich, California, New York, Africa and Ukraine in the future.
+                            Currently not interested in Remote Job, I want to learn on-site from other developers, but going to work remotely in the future.
                         </AnimatedText>
                         <Image src={Banana} />
                     </>
@@ -136,7 +165,7 @@ export class Main extends React.Component {
                 return (
                     <>
                         <AnimatedText>
-                            Some shit here.
+                            Visit LinkedIn, Github. My mail: walczakp007@gmail.com
                         </AnimatedText>
                         <Image src={Signature} />
                     </>
